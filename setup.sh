@@ -9,8 +9,10 @@ fi
 echo "===== Setup for Customization of Proxmox ====="
 
 apt-get update
-apt-get -y upgrade
-apt-get -y install neovim git
+apt-get -y install nala
+nala update
+nala -y upgrade
+nala install -y neovim git
 
 # Set Git global configuration
 git config --global user.name "$1"
